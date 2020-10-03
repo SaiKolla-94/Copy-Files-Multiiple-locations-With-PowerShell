@@ -2,6 +2,7 @@
 
 $data = Get-Content -Path $mytarget
 
+$data
 
 $sourcepath = "C:\Users\h09853\Desktop\01.ppk"
 
