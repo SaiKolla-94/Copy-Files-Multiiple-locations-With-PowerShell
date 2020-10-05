@@ -1,15 +1,15 @@
-﻿$mytarget = "C:\target.txt
-
+$mytarget = "C:\target.txt"
+$source = "C:\Users\Administrator\Desktop\Asgar Ali.docx"
 $data = Get-Content -Path $mytarget
 
 $data
 
-$sourcepath = "C:\Users\h09853\Desktop\01.ppk"
-
 foreach($target in $data)
-
-{
-
-Copy-Item -Path $sourcepath\* -Destination "$target" 
-
-}
+{ 
+Copy-Item -Path $source\* -Destination "$target\C$\*" -Recurse
+    }
+     else
+     {
+  
+        "$computer is not online"
+    }
